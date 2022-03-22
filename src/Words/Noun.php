@@ -10,15 +10,14 @@ class Noun
      * @var string[]
      */
     protected static $nouns = [
-        'waterfall', 'river', 'breeze', 'moon', 'rain', 'wind', 'sea', 'morning',
-        'snow', 'lake', 'sunset', 'pine', 'shadow', 'leaf', 'dawn', 'glitter',
-        'forest', 'hill', 'cloud', 'meadow', 'sun', 'glade', 'bird', 'brook',
-        'butterfly', 'bush', 'dew', 'dust', 'field', 'fire', 'flower', 'firefly',
-        'feather', 'grass', 'haze', 'mountain', 'night', 'pond', 'darkness',
-        'snowflake', 'silence', 'sound', 'sky', 'shape', 'surf', 'thunder',
-        'violet', 'water', 'wildflower', 'wave', 'water', 'resonance', 'sun',
-        'wood', 'dream', 'cherry', 'tree', 'fog', 'frost', 'voice', 'paper',
-        'frog', 'smoke', 'star', 'spark', 'grass', 'sun', 'moon', 'light',
+        'bird', 'breeze', 'brook', 'bush', 'butterfly', 'cherry', 'cloud', 'darkness',
+        'dawn', 'dew', 'dream', 'dust', 'feather', 'field', 'fire', 'firefly', 'flower',
+        'fog', 'forest', 'frog', 'frost', 'galaxy', 'glade', 'glitter', 'grass', 'haze',
+        'hill', 'lake', 'leaf', 'light', 'meadow', 'moon', 'morning', 'mountain', 'night',
+        'oasis', 'paper', 'pine', 'pond', 'rain', 'resonance', 'river', 'sea', 'sea',
+        'shadow', 'shadow', 'shape', 'silence', 'sky', 'smoke', 'snow', 'snowflake',
+        'sound', 'spark', 'star', 'sun', 'sunset', 'surf', 'thunder', 'tree', 'violet',
+        'voice', 'water', 'waterfall', 'wave', 'wildflower', 'willow', 'wind', 'wood',
     ];
 
     /**
