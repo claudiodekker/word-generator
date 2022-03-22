@@ -1,0 +1,41 @@
+{
+    "name": "claudiodekker/word-generator",
+    "description": "Generates random words by combining adjectives and nouns",
+    "keywords": [
+        "adjective",
+        "noun",
+        "word",
+        "generator"
+    ],
+    "homepage": "https://github.com/claudiodekker/word-generator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Claudio Dekker",
+            "email": "claudio@ubient.net",
+            "homepage": "https://ubient.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3|~8.0.0|~8.1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.4|^9.5.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "ClaudioDekker\\WordGenerator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ClaudioDekker\\WordGenerator\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
