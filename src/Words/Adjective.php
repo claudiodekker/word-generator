@@ -10,15 +10,14 @@ class Adjective
      * @var string[]
      */
     protected static $adjectives = [
-        'autumn', 'hidden', 'bitter', 'misty', 'silent', 'empty', 'dry', 'dark',
-        'summer', 'icy', 'delicate', 'quiet', 'hollow', 'cool', 'spring', 'winter',
-        'patient', 'twilight', 'dawn', 'crimson', 'wispy', 'weathered', 'blue',
-        'billowing', 'broken', 'cold', 'damp', 'falling', 'frosty', 'green',
-        'long', 'late', 'lingering', 'bold', 'little', 'morning', 'muddy',
-        'old', 'red', 'rough', 'still', 'small', 'sparkling', 'resilient',
-        'shy', 'wandering', 'withered', 'wild', 'indigo', 'young', 'holy',
-        'solitary', 'fragrant', 'aged', 'snowy', 'proud', 'floral', 'restless',
-        'divine', 'polished', 'ancient', 'purple', 'lively', 'nameless',
+        'aged', 'ancient', 'autumn', 'billowing', 'bitter', 'blue', 'bold', 'broken',
+        'cold', 'cool', 'crimson', 'damp', 'dark', 'dawn', 'delicate', 'divine', 'dry',
+        'empty', 'falling', 'floral', 'fragrant', 'frosty', 'green', 'hidden', 'hollow',
+        'holy', 'icy', 'indigo', 'late', 'lingering', 'little', 'lively', 'long', 'misty',
+        'morning', 'muddy', 'nameless', 'old', 'patient', 'polished', 'proud', 'purple',
+        'quiet', 'red', 'resilient', 'restless', 'rough', 'shy', 'silent', 'small', 'snowy',
+        'solitary', 'sparkling', 'spring', 'still', 'summer', 'twilight', 'wandering',
+        'weathered', 'wild', 'winter', 'wispy', 'withered', 'young',
     ];
 
     /**
