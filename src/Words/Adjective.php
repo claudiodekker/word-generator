@@ -29,4 +29,15 @@ class Adjective
     {
         return self::$adjectives[array_rand(self::$adjectives)];
     }
+
+    /**
+     * Set the possible adjectives that can be returned.
+     *
+     * @param string[] $adjectives
+     * @return void
+     */
+    public static function setWordList(array $adjectives): void
+    {
+        self::$adjectives = $adjectives;
+    }
 }

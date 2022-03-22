@@ -46,4 +46,15 @@ class GeneratorTest extends TestCase
 
         $this->assertNotSame($wordA, $wordB);
     }
+
+    /** @test */
+    public function it_can_use_custom_word_lists(): void
+    {
+        $adjectives = ['foo'];
+        $nouns = ['bar'];
+
+        Generator::setWordLists($adjectives, $nouns);
+
+        $this->assertSame('foo bar', Generator::generate());
+    }
 }
