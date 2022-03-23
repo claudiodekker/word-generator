@@ -29,4 +29,15 @@ class Noun
     {
         return self::$nouns[array_rand(self::$nouns)];
     }
+
+    /**
+     * Set the possible nouns that can be returned.
+     *
+     * @param string[] $nouns
+     * @return void
+     */
+    public static function setWordList(array $nouns): void
+    {
+        self::$nouns = $nouns;
+    }
 }
