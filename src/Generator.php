@@ -11,8 +11,8 @@ class Generator
      * Override the adjectives and nouns that should be used when
      * generating random phrases.
      *
-     * @param string[] $adjectives
-     * @param string[] $nouns
+     * @param  string[]  $adjectives
+     * @param  string[]  $nouns
      * @return void
      */
     public static function setWordLists(array $adjectives, array $nouns): void
