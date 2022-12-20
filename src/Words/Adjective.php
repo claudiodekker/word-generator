@@ -33,7 +33,7 @@ class Adjective
     /**
      * Set the possible adjectives that can be returned.
      *
-     * @param string[] $adjectives
+     * @param  string[]  $adjectives
      * @return void
      */
     public static function setWordList(array $adjectives): void

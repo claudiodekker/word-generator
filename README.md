@@ -1,17 +1,8 @@
-<p align="left">
-  <a href="https://github.com/claudiodekker/word-generator/releases">
-    <img src="https://img.shields.io/github/release/claudiodekker/word-generator.svg?style=flat-square" alt="Latest Version">
-  </a>
-  <a href="https://github.com/claudiodekker/word-generator/actions?query=workflow%3Atests+branch%3Amaster">
-    <img src="https://img.shields.io/github/workflow/status/claudiodekker/word-generator/tests/master.svg?style=flat-square" alt="Build Status">
-  </a>
-  <a href="https://scrutinizer-ci.com/g/claudiodekker/word-generator">
-    <img src="https://img.shields.io/scrutinizer/g/claudiodekker/word-generator.svg?style=flat-square" alt="Quality Score">
-  </a>
-  <a href="https://packagist.org/packages/claudiodekker/word-generator">
-    <img src="https://img.shields.io/packagist/dt/claudiodekker/word-generator.svg?style=flat-square" alt="Total Downloads">
-  </a>
-</p>
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/claudiodekker/word-generator.svg)](https://packagist.org/packages/claudiodekker/word-generator)
+[![Github Tests Action Status](https://github.com/claudiodekker/word-generator/actions/workflows/tests.yml/badge.svg)](https://github.com/claudiodekker/word-generator/actions/workflows/tests.yml)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/claudiodekker/word-generator/fix-styling.yml?label=code%20style&logo=github&branch=master)](https://github.com/claudiodekker/word-generator/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amaster)
+[![Code Quality Score](https://img.shields.io/scrutinizer/g/claudiodekker/word-generator.svg?logo=scrutinizer)](https://scrutinizer-ci.com/g/claudiodekker/word-generator)
+[![Total Downloads](https://img.shields.io/packagist/dt/claudiodekker/word-generator.svg)](https://packagist.org/packages/claudiodekker/word-generator)
 
 # Word Generator
 

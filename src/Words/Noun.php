@@ -33,7 +33,7 @@ class Noun
     /**
      * Set the possible nouns that can be returned.
      *
-     * @param string[] $nouns
+     * @param  string[]  $nouns
      * @return void
      */
     public static function setWordList(array $nouns): void
