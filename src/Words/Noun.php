@@ -22,8 +22,6 @@ class Noun
 
     /**
      * Get a random noun.
-     *
-     * @return string
      */
     public static function random(): string
     {
@@ -34,7 +32,6 @@ class Noun
      * Set the possible nouns that can be returned.
      *
      * @param  string[]  $nouns
-     * @return void
      */
     public static function setWordList(array $nouns): void
     {

@@ -22,8 +22,6 @@ class Adjective
 
     /**
      * Get a random adjective.
-     *
-     * @return string
      */
     public static function random(): string
     {
@@ -34,7 +32,6 @@ class Adjective
      * Set the possible adjectives that can be returned.
      *
      * @param  string[]  $adjectives
-     * @return void
      */
     public static function setWordList(array $adjectives): void
     {

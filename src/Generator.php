@@ -13,7 +13,6 @@ class Generator
      *
      * @param  string[]  $adjectives
      * @param  string[]  $nouns
-     * @return void
      */
     public static function setWordLists(array $adjectives, array $nouns): void
     {
@@ -23,9 +22,6 @@ class Generator
 
     /**
      * Generate a random phrase.
-     *
-     * @param  string  $separator
-     * @return string
      */
     public static function generate(string $separator = ' '): string
     {
