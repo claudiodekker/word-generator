@@ -9,7 +9,7 @@ class Adjective
      *
      * @var string[]
      */
-    protected static $adjectives = [
+    const DEFAULT_ADJECTIVES = [
         'aged', 'ancient', 'autumn', 'billowing', 'bitter', 'blue', 'bold', 'broken',
         'cold', 'cool', 'crimson', 'damp', 'dark', 'dawn', 'delicate', 'divine', 'dry',
         'empty', 'falling', 'floral', 'fragrant', 'frosty', 'green', 'hidden', 'hollow',
@@ -20,11 +20,18 @@ class Adjective
         'weathered', 'wild', 'winter', 'wispy', 'withered', 'young',
     ];
 
+    /** @var array  */
+    protected static $adjectives = [];
+
     /**
      * Get a random adjective.
      */
     public static function random(): string
     {
+        if(empty(self::$adjectives)) {
+            self::setWordList(self::DEFAULT_ADJECTIVES);
+        }
+
         return self::$adjectives[array_rand(self::$adjectives)];
     }
 

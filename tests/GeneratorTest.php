@@ -57,4 +57,13 @@ class GeneratorTest extends TestCase
 
         $this->assertSame('foo bar', Generator::generate());
     }
+
+    /** @test */
+    public function it_can_be_reinitialized(): void
+    {
+        Generator::setWordLists(['foo'], ['bar']);
+        Generator::init();
+
+        $this->assertNotSame('foo bar', Generator::generate());
+    }
 }
