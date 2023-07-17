@@ -9,7 +9,7 @@ class Noun
      *
      * @var string[]
      */
-    protected static $nouns = [
+    const DEFAULT_NOUNS = [
         'bird', 'breeze', 'brook', 'bush', 'butterfly', 'cherry', 'cloud', 'darkness',
         'dawn', 'dew', 'dream', 'dust', 'feather', 'field', 'fire', 'firefly', 'flower',
         'fog', 'forest', 'frog', 'frost', 'galaxy', 'glade', 'glitter', 'grass', 'haze',
@@ -20,11 +20,18 @@ class Noun
         'voice', 'water', 'waterfall', 'wave', 'wildflower', 'willow', 'wind', 'wood',
     ];
 
+    /** @var array  */
+    protected static $nouns = [];
+
     /**
      * Get a random noun.
      */
     public static function random(): string
     {
+        if(empty(self::$nouns)) {
+            self::setWordList(self::DEFAULT_NOUNS);
+        }
+
         return self::$nouns[array_rand(self::$nouns)];
     }
 

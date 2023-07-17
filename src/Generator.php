@@ -8,6 +8,15 @@ use ClaudioDekker\WordGenerator\Words\Noun;
 class Generator
 {
     /**
+     * @return void
+     */
+    public static function init(): void
+    {
+        Adjective::setWordList([]);
+        Noun::setWordList([]);
+    }
+
+    /**
      * Override the adjectives and nouns that should be used when
      * generating random phrases.
      *
