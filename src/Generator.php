@@ -31,9 +31,27 @@ class Generator
 
     /**
      * Generate a random phrase.
+     *
+     * @param string $separator
+     * @param int $adjectives
+     * @return string
      */
-    public static function generate(string $separator = ' '): string
+    public static function generate(string $separator = ' ', int $adjectives = 1): string
     {
-        return Adjective::random().$separator.Noun::random();
+        $generatedString = '';
+
+        if($adjectives > 10) {
+            $adjectives = 10;
+        }
+
+        for($i=0; $i<$adjectives; $i++) {
+            if($i !== 0) {
+                $generatedString .= $separator;
+            }
+
+            $generatedString .= Adjective::random();
+        }
+
+        return $generatedString.$separator.Noun::random();
     }
 }

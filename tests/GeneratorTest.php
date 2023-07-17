@@ -66,4 +66,40 @@ class GeneratorTest extends TestCase
 
         $this->assertNotSame('foo bar', Generator::generate());
     }
+
+    /** @test */
+    public function it_can_use_multiple_adjectives(): void
+    {
+        Generator::init();
+
+        $stringA = Generator::generate('-', 3);
+        $parts = explode('-', $stringA);
+
+        $isStringValid = true;
+
+        foreach($parts as $part) {
+            $isStringValid = strlen($part) > 0;
+        }
+
+        $this->assertEquals(3, substr_count($stringA, '-'));
+        $this->assertTrue($isStringValid);
+    }
+
+    /** @test */
+    public function it_can_use_a_max_of_10_adjectives(): void
+    {
+        Generator::init();
+
+        $stringA = Generator::generate('-', 12);
+        $parts = explode('-', $stringA);
+
+        $isStringValid = true;
+
+        foreach($parts as $part) {
+            $isStringValid = strlen($part) > 0;
+        }
+
+        $this->assertEquals(10, substr_count($stringA, '-'));
+        $this->assertCount(11, $parts);
+    }
 }
