@@ -7,23 +7,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased](https://github.com/claudiodekker/word-generator/compare/v1.1.1...HEAD)
 
+### Added
+
+- Add ability to reset custom word lists ([#5](https://github.com/claudiodekker/word-generator/pull/5))
+
+
 ## [v1.2.0](https://github.com/claudiodekker/word-generator/compare/v1.1.0...v1.2.0) - 2022-12-20
 
 ### Added
+
 - PHP 8.2 support ([#3](https://github.com/claudiodekker/word-generator/pull/3))
 
 ### Fixed
+
 - Fixed the README.md status badges, and auto-fixed code style through new Github Action flows ([#4](https://github.com/claudiodekker/word-generator/pull/4))
+
 
 ## [v1.1.0](https://github.com/claudiodekker/word-generator/compare/v1.0.1...v1.1.0) - 2022-03-23
 
 ### Added
+
 - Ability to set custom adjectives and/or nouns ([#2](https://github.com/claudiodekker/word-generator/pull/2))
+
 
 ## [v1.0.1](https://github.com/claudiodekker/word-generator/compare/v1.0.0...v1.0.1) - 2022-03-22
 
 ### Fixed
+
 - The list of nouns included duplicates, and wasn't sorted alphabetically. ([#1](https://github.com/claudiodekker/word-generator/pull/1))
+
 
 ## v1.0.0 - 2022-03-22
 
