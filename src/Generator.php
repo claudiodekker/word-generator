@@ -8,12 +8,12 @@ use ClaudioDekker\WordGenerator\Words\Noun;
 class Generator
 {
     /**
-     * @return void
+     * Reset the adjectives and nouns to their original word lists.
      */
-    public static function init(): void
+    public static function reset(): void
     {
-        Adjective::setWordList([]);
-        Noun::setWordList([]);
+        Adjective::setWordList();
+        Noun::setWordList();
     }
 
     /**

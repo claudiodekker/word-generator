@@ -50,19 +50,17 @@ class GeneratorTest extends TestCase
     /** @test */
     public function it_can_use_custom_word_lists(): void
     {
-        $adjectives = ['foo'];
-        $nouns = ['bar'];
-
-        Generator::setWordLists($adjectives, $nouns);
+        Generator::setWordLists(['foo'], ['bar']);
 
         $this->assertSame('foo bar', Generator::generate());
     }
 
     /** @test */
-    public function it_can_be_reinitialized(): void
+    public function it_can_reset_the_custom_word_lists(): void
     {
         Generator::setWordLists(['foo'], ['bar']);
-        Generator::init();
+
+        Generator::reset();
 
         $this->assertNotSame('foo bar', Generator::generate());
     }

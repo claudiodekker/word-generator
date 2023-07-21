@@ -5,11 +5,11 @@ namespace ClaudioDekker\WordGenerator\Words;
 class Noun
 {
     /**
-     * A list of nouns.
+     * The default list of nouns.
      *
      * @var string[]
      */
-    const DEFAULT_NOUNS = [
+    protected const DEFAULT_NOUNS = [
         'bird', 'breeze', 'brook', 'bush', 'butterfly', 'cherry', 'cloud', 'darkness',
         'dawn', 'dew', 'dream', 'dust', 'feather', 'field', 'fire', 'firefly', 'flower',
         'fog', 'forest', 'frog', 'frost', 'galaxy', 'glade', 'glitter', 'grass', 'haze',
@@ -20,7 +20,11 @@ class Noun
         'voice', 'water', 'waterfall', 'wave', 'wildflower', 'willow', 'wind', 'wood',
     ];
 
-    /** @var array  */
+    /**
+     * The currently configured nouns.
+     *
+     * @var string[]
+     */
     protected static $nouns = [];
 
     /**
@@ -28,7 +32,7 @@ class Noun
      */
     public static function random(): string
     {
-        if(empty(self::$nouns)) {
+        if (empty(self::$nouns)) {
             self::setWordList(self::DEFAULT_NOUNS);
         }
 
@@ -40,7 +44,7 @@ class Noun
      *
      * @param  string[]  $nouns
      */
-    public static function setWordList(array $nouns): void
+    public static function setWordList(array $nouns = []): void
     {
         self::$nouns = $nouns;
     }
