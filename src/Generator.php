@@ -8,6 +8,15 @@ use ClaudioDekker\WordGenerator\Words\Noun;
 class Generator
 {
     /**
+     * Reset the adjectives and nouns to their original word lists.
+     */
+    public static function reset(): void
+    {
+        Adjective::setWordList();
+        Noun::setWordList();
+    }
+
+    /**
      * Override the adjectives and nouns that should be used when
      * generating random phrases.
      *
