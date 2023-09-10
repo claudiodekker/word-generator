@@ -34,6 +34,16 @@ use ClaudioDekker\WordGenerator\Generator;
 echo Generator::generate('-'); // Outputs 'autumn-firefly', 'crimson-meadow', etc.
 ```
 
+If you need words of a certain length, the second argument can be used to set how long the word will become. It does this by adding more adjectives.
+It's also possible to use a custom separator character, by passing it as the first argument:
+```php
+<?php
+
+use ClaudioDekker\WordGenerator\Generator;
+
+echo Generator::generate('-', 5); // Outputs 'autumn-firefly' etc.
+```
+
 ### Custom Word Lists
 
 It is also possible to override the adjectives and nouns that can be used to generate the random phrases. For example, you may wish to do this if you want to use words that are themed or branded to your project.

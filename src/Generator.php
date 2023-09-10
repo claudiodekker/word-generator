@@ -4,6 +4,7 @@ namespace ClaudioDekker\WordGenerator;
 
 use ClaudioDekker\WordGenerator\Words\Adjective;
 use ClaudioDekker\WordGenerator\Words\Noun;
+use LengthException;
 
 class Generator
 {
@@ -31,9 +32,21 @@ class Generator
 
     /**
      * Generate a random phrase.
+     * @param string $separator
+     * @param int $length
+     * @return string
      */
-    public static function generate(string $separator = ' '): string
+    public static function generate(string $separator = ' ', int $length = 2): string
     {
-        return Adjective::random().$separator.Noun::random();
+        if ($length < 2) {
+            throw new LengthException('Minimum length is 2');
+        }
+
+        $word = '';
+        for ($i = 0; $i < $length - 1; $i++) {
+            $word .= Adjective::random().$separator;
+        }
+
+        return $word.Noun::random();
     }
 }
