@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Add option for controlling the total word length ([#8](https://github.com/claudiodekker/word-generator/pull/8))
 
+### Optimized
+
+- Add more adjectives and nouns to the built-in lists ([#9](https://github.com/claudiodekker/word-generator/pull/9))
+
 
 ## [v1.3.0](https://github.com/claudiodekker/word-generator/compare/v1.2.0...v1.3.0) - 2023-07-21
 
