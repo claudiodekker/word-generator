@@ -80,6 +80,7 @@ class GeneratorTest extends TestCase
     public function it_throws_an_error_on_invalid_length(): void
     {
         $this->expectException(LengthException::class);
+
         Generator::generate(' ', 1);
     }
 
