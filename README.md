@@ -41,7 +41,8 @@ It's also possible to use a custom separator character, by passing it as the fir
 
 use ClaudioDekker\WordGenerator\Generator;
 
-echo Generator::generate('-', 5); // Outputs 'autumn-firefly' etc.
+echo Generator::generate('-'); // Outputs 'autumn-firefly' etc.
+echo Generator::generate('-', 4); // Outputs 'crimson-autumn-wandering-firefly' etc.
 ```
 
 ### Custom Word Lists
