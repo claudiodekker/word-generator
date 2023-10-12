@@ -35,13 +35,11 @@ echo Generator::generate('-'); // Outputs 'autumn-firefly', 'crimson-meadow', et
 ```
 
 If you need words of a certain length, the second argument can be used to set how long the word will become. It does this by adding more adjectives.
-It's also possible to use a custom separator character, by passing it as the first argument:
 ```php
 <?php
 
 use ClaudioDekker\WordGenerator\Generator;
 
-echo Generator::generate('-'); // Outputs 'autumn-firefly' etc.
 echo Generator::generate('-', 4); // Outputs 'crimson-autumn-wandering-firefly' etc.
 ```
 
