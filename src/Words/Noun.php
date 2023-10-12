@@ -10,14 +10,30 @@ class Noun
      * @var string[]
      */
     protected const DEFAULT_NOUNS = [
-        'bird', 'breeze', 'brook', 'bush', 'butterfly', 'cherry', 'cloud', 'darkness',
-        'dawn', 'dew', 'dream', 'dust', 'feather', 'field', 'fire', 'firefly', 'flower',
-        'fog', 'forest', 'frog', 'frost', 'galaxy', 'glade', 'glitter', 'grass', 'haze',
-        'hill', 'lake', 'leaf', 'light', 'meadow', 'moon', 'morning', 'mountain', 'night',
-        'oasis', 'paper', 'pine', 'pond', 'rain', 'resonance', 'river', 'sea', 'sea',
-        'shadow', 'shadow', 'shape', 'silence', 'sky', 'smoke', 'snow', 'snowflake',
-        'sound', 'spark', 'star', 'sun', 'sunset', 'surf', 'thunder', 'tree', 'violet',
-        'voice', 'water', 'waterfall', 'wave', 'wildflower', 'willow', 'wind', 'wood',
+        'acorn', 'algae', 'alpenglow', 'apex', 'arc', 'aurora', 'balloon', 'beacon',
+        'beam', 'bird', 'bloom', 'blush', 'bough', 'boulder', 'bramble', 'breeze',
+        'brook', 'butterfly', 'candle', 'canopy', 'canyon', 'cascade', 'cinder', 'cliff',
+        'cloud', 'constellation', 'cove', 'creek', 'crest', 'cricket', 'crystal', 'dandelion',
+        'dapple', 'dawn', 'dell', 'dew', 'dewdrop', 'dream', 'drizzle', 'dust',
+        'eagle', 'ember', 'estuary', 'expanse', 'fawn', 'feather', 'fern', 'field',
+        'fire', 'firefly', 'flame', 'flare', 'flower', 'fluff', 'foam', 'fog',
+        'forest', 'fox', 'fragment', 'frog', 'frost', 'galaxy', 'glade', 'glen',
+        'glimmer', 'glitter', 'glow', 'grass', 'grove', 'hail', 'harbor', 'haven',
+        'haze', 'hearth', 'hedge', 'hill', 'horizon', 'hummingbird', 'isle', 'jewel',
+        'jungle', 'lagoon', 'lake', 'landmark', 'lantern', 'lark', 'leaf', 'lichen',
+        'light', 'lily', 'lotus', 'lullaby', 'marble', 'marsh', 'meadow', 'meander',
+        'mirage', 'moon', 'morning', 'moss', 'mountain', 'murmur', 'nebula', 'nest',
+        'night', 'oak', 'oasis', 'ocean', 'orchard', 'orchid', 'palm', 'panorama',
+        'paper', 'peak', 'pebble', 'penguin', 'penumbra', 'petal', 'pine', 'plateau',
+        'pond', 'prairie', 'rain', 'ravine', 'reef', 'resonance', 'ridge', 'rift',
+        'ripple', 'river', 'rosette', 'sanctuary', 'sand', 'sapphire', 'savanna', 'sea',
+        'seashell', 'sediment', 'shade', 'shape', 'shard', 'shelter', 'shimmer', 'silence',
+        'sky', 'snow', 'snowflake', 'solace', 'songbird', 'sound', 'spark', 'spindle',
+        'spire', 'splash', 'spray', 'sprig', 'sprout', 'squirrel', 'star', 'stone',
+        'strand', 'stream', 'summit', 'sun', 'sunset', 'surf', 'swirl', 'thunder',
+        'tide', 'trail', 'tree', 'tundra', 'twig', 'umbra', 'vale', 'valley',
+        'vapor', 'veil', 'violet', 'vista', 'voice', 'vortex', 'water', 'waterfall',
+        'wave', 'wildflower', 'willow', 'wind', 'wisp', 'wood', 'zenith', 'zest',
     ];
 
     /**
