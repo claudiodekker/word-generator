@@ -34,7 +34,7 @@ use ClaudioDekker\WordGenerator\Generator;
 echo Generator::generate('-'); // Outputs 'autumn-firefly', 'crimson-meadow', etc.
 ```
 
-If you need words of a certain length, the second argument can be used to set how long the word will become. It does this by adding more adjectives.
+If you need words of a certain length or complexity, you can use the second argument to increase the number of adjectives used:
 ```php
 <?php
 
