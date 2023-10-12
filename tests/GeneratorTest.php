@@ -3,6 +3,7 @@
 namespace ClaudioDekker\WordGenerator\Tests;
 
 use ClaudioDekker\WordGenerator\Generator;
+use LengthException;
 use PHPUnit\Framework\TestCase;
 
 class GeneratorTest extends TestCase
@@ -64,4 +65,23 @@ class GeneratorTest extends TestCase
 
         $this->assertNotSame('foo bar', Generator::generate());
     }
+
+    /** @test  */
+    public function it_can_generate_words_of_varying_length(): void
+    {
+        $this->assertCount(2, \explode(' ', Generator::generate(' ')));
+        $this->assertCount(3, \explode(' ', Generator::generate(' ', 3)));
+        $this->assertCount(4, \explode(' ', Generator::generate(' ', 4)));
+        $this->assertCount(5, \explode(' ', Generator::generate(' ', 5)));
+        $this->assertCount(6, \explode(' ', Generator::generate(' ', 6)));
+    }
+
+    /** @test  */
+    public function it_throws_an_error_on_invalid_length(): void
+    {
+        $this->expectException(LengthException::class);
+
+        Generator::generate(' ', 1);
+    }
+
 }
