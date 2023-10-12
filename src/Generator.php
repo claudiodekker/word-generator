@@ -32,9 +32,6 @@ class Generator
 
     /**
      * Generate a random phrase.
-     * @param string $separator
-     * @param int $length
-     * @return string
      */
     public static function generate(string $separator = ' ', int $length = 2): string
     {

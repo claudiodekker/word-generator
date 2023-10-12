@@ -83,5 +83,4 @@ class GeneratorTest extends TestCase
 
         Generator::generate(' ', 1);
     }
-
 }
