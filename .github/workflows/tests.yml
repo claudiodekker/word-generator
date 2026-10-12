@@ -12,12 +12,13 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        php: [ 7.3, 7.4, '8.0', 8.1, 8.2, 8.3, 8.4, 8.5 ]
+        php: [ 7.3, 7.4, '8.0', 8.1, 8.2, 8.3, 8.4, 8.5, 8.6 ]
+        stability: [ prefer-lowest, prefer-stable ]
 
-    name: PHP ${{ matrix.php }}
+    name: PHP ${{ matrix.php }} - ${{ matrix.stability }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v7
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -28,7 +29,7 @@ jobs:
           coverage: none
 
       - name: Install dependencies
-        uses: nick-invision/retry@v1
+        uses: nick-fields/retry@v4
         with:
           timeout_minutes: 5
           max_attempts: 5
